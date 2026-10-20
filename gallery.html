@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GALLERY | Chen Xu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-header">
+  <nav class="nav"><a href="index.html">HOME</a><a href="performances.html">PERFORMANCES</a><a href="gallery.html" class=active>GALLERY</a><a href="bio.html">BIO</a><a href="contact.html">CONTACT</a></nav>
+  <div class="social">
+    <a href="https://www.youtube.com/@chenxuaff" target="_blank" rel="noopener"><img src="https://static.wixstatic.com/media/11062b_8dcadfa428954b1d919f8499f75aa27a~mv2.png" alt="Youtube" width="22" height="22"></a>
+    <a href="#" target="_blank" rel="noopener"><img src="https://static.wixstatic.com/media/11062b_55e4be1e75564866b6c28290f9a9d271~mv2.png" alt="Instagram" width="22" height="22"></a>
+  </div>
+</header>
+<main><section class="page wide"><h1>GALLERY</h1><div class="grid"><a href="https://static.wixstatic.com/media/989452_e65f4de0e2ae4b21933506db6a9b1b9d~mv2.jpeg" class="cell"><img src="https://static.wixstatic.com/media/989452_e65f4de0e2ae4b21933506db6a9b1b9d~mv2.jpeg" style="object-position:50% 50%" alt="" loading="lazy"></a><a href="https://static.wixstatic.com/media/989452_b480160d6df34d9793042ccc8589cf99~mv2.jpeg" class="cell"><img src="https://static.wixstatic.com/media/989452_b480160d6df34d9793042ccc8589cf99~mv2.jpeg" style="object-position:50% 50%" alt="" loading="lazy"></a><a href="https://static.wixstatic.com/media/989452_8b88857dc413429b9a2297a5f3e9cac0~mv2.jpg" class="cell"><img src="https://static.wixstatic.com/media/989452_8b88857dc413429b9a2297a5f3e9cac0~mv2.jpg" style="object-position:50% 50%" alt="" loading="lazy"></a><a href="https://static.wixstatic.com/media/989452_e4734a3720614204a35fae1233bbe21f~mv2.jpg" class="cell"><img src="https://static.wixstatic.com/media/989452_e4734a3720614204a35fae1233bbe21f~mv2.jpg" style="object-position:50% 50%" alt="" loading="lazy"></a><a href="https://static.wixstatic.com/media/989452_47f5658269eb47c0964ca4e34aa66b09~mv2.jpg" class="cell"><img src="https://static.wixstatic.com/media/989452_47f5658269eb47c0964ca4e34aa66b09~mv2.jpg" style="object-position:41% 38%" alt="" loading="lazy"></a><a href="https://static.wixstatic.com/media/989452_bdf9002da5014b41bcf57a38a1ee453b~mv2.jpg" class="cell"><img src="https://static.wixstatic.com/media/989452_bdf9002da5014b41bcf57a38a1ee453b~mv2.jpg" style="object-position:51% 29%" alt="" loading="lazy"></a><a href="https://static.wixstatic.com/media/989452_8b0ea260868348f5a2095c72c7638abe~mv2.jpg" class="cell"><img src="https://static.wixstatic.com/media/989452_8b0ea260868348f5a2095c72c7638abe~mv2.jpg" style="object-position:50% 50%" alt="" loading="lazy"></a><a href="https://static.wixstatic.com/media/989452_898c6e745eee436b8b84a0078c351c1b~mv2.jpg" class="cell"><img src="https://static.wixstatic.com/media/989452_898c6e745eee436b8b84a0078c351c1b~mv2.jpg" style="object-position:50% 50%" alt="" loading="lazy"></a><a href="https://static.wixstatic.com/media/989452_ef93c62a6550442283ef6d2f08b0d621~mv2.jpg" class="cell"><img src="https://static.wixstatic.com/media/989452_ef93c62a6550442283ef6d2f08b0d621~mv2.jpg" style="object-position:50% 50%" alt="" loading="lazy"></a><a href="https://static.wixstatic.com/media/989452_e5f906d6b1a647a2936fbdad7483824e~mv2.jpg" class="cell"><img src="https://static.wixstatic.com/media/989452_e5f906d6b1a647a2936fbdad7483824e~mv2.jpg" style="object-position:47% 54%" alt="" loading="lazy"></a><a href="https://static.wixstatic.com/media/989452_8841890af7d44e53b288743213db1e31~mv2.jpeg" class="cell"><img src="https://static.wixstatic.com/media/989452_8841890af7d44e53b288743213db1e31~mv2.jpeg" style="object-position:50% 50%" alt="" loading="lazy"></a><a href="https://static.wixstatic.com/media/989452_ec7c59ac56ba4b0790e99306a5980b96~mv2.jpg" class="cell"><img src="https://static.wixstatic.com/media/989452_ec7c59ac56ba4b0790e99306a5980b96~mv2.jpg" style="object-position:50% 50%" alt="" loading="lazy"></a></div></section>
+<div class="lightbox" id="lb"><img alt=""></div>
+<script>
+const lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('.cell').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();li.src=a.href;lb.classList.add('open')}));
+lb.addEventListener('click',()=>lb.classList.remove('open'));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
+</script></main>
+<footer class="site-footer">© 2026 Chen Xu</footer>
+</body></html>
